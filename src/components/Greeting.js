@@ -20,7 +20,7 @@ const randomEmoji = () => {
 const Greeting = () => {
   return (
     <h1>
-      Hello, My name is Igor
+      Hi, my name is Igor
       {randomEmoji()}
     </h1>
   )
