@@ -1,0 +1,9 @@
+.emoji {
+    opacity: 0;
+    transition: opacity ease-in 500ms;
+    margin-left: 10px;
+}
+
+.emojiShown {
+    opacity: 1;
+}
