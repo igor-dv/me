@@ -6,18 +6,18 @@ import linkedin from '../icons/linkedin.svg';
 
 const style = {
   icons: {
-    width: "30px",
-    display: "block",
+    width: '30px',
+    display: 'block',
   },
   list: {
     margin: 0,
     padding: 0,
-    listStyle: "none",
-    display: "flex",
-    justifyContent: "center",
+    listStyle: 'none',
+    display: 'flex',
+    justifyContent: 'center',
   },
   listItem: {
-    margin: "10px",
+    margin: '10px',
     padding: 0,
   },
 };
@@ -46,7 +46,7 @@ const LinksList = () => {
         </a>
       </li>
     </ul>
-  )
+  );
 };
 
 export default LinksList;

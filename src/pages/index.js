@@ -4,16 +4,16 @@ import LinksList from '../components/LinksList';
 
 const style = {
   page: {
-    position: "absolute",
+    position: 'absolute',
     width: '100%',
     height: '100%',
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   inner: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
   },
 };
 
