@@ -2,6 +2,7 @@
 .cache
 .misc
 .DS_Store
+.out
 public/
 node_modules
 yarn-error.log

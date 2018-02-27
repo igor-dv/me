@@ -5,7 +5,8 @@
   "description": "About myself",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --trailing-comma es5 --single-quote --write \"**/src/**/*.js\""
+    "format": "prettier --trailing-comma es5 --single-quote --write \"{scripts,**/src}/**/*.js\"",
+    "build": "node ./scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -15,11 +16,14 @@
     "url": "https://github.com/igor-dv/me/issues"
   },
   "homepage": "https://github.com/igor-dv/me#readme",
-  "dependencies": { },
   "devDependencies": {
-    "prettier": "^1.10.2"
+    "prettier": "^1.10.2",
+    "shelljs": "^0.8.1"
   },
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "dependencies": {
+    "chalk": "^2.3.1"
+  }
 }
