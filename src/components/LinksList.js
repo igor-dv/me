@@ -1,49 +1,38 @@
 import React from 'react';
+import BrandLink from './BrandLink';
 import twitter from '../assets/twitter-square.svg';
 import github from '../assets/github-square.svg';
 import medium from '../assets/medium.svg';
 import linkedin from '../assets/linkedin.svg';
 
-const style = {
-  icons: {
-    width: '30px',
-    display: 'block',
-  },
-  list: {
-    margin: 0,
-    padding: 0,
-    listStyle: 'none',
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  listItem: {
-    margin: '10px',
-    padding: 0,
-  },
-};
+import './LinksList.css';
 
 const LinksList = () => {
   return (
-    <ul style={style.list}>
-      <li style={style.listItem}>
-        <a href="https://github.com/igor-dv" target="_blank">
-          <img src={github} style={style.icons} alt="github" />
-        </a>
+    <ul className="list">
+      <li className="list-item">
+        <BrandLink src={github} alt="github" url="https://github.com/igor-dv" />
       </li>
-      <li style={style.listItem}>
-        <a href="https://medium.com/@davydkin.igor" target="_blank">
-          <img src={medium} style={style.icons} alt="medium" />
-        </a>
+      <li className="list-item">
+        <BrandLink
+          src={medium}
+          alt="medium"
+          url="https://medium.com/@davydkin.igor"
+        />
       </li>
-      <li style={style.listItem}>
-        <a href="https://twitter.com/@IgorDavydkin" target="_blank">
-          <img src={twitter} style={style.icons} alt="twitter" />
-        </a>
+      <li className="list-item">
+        <BrandLink
+          src={twitter}
+          alt="twitter"
+          url="https://twitter.com/@IgorDavydkin"
+        />
       </li>
-      <li style={style.listItem}>
-        <a href="https://www.linkedin.com/in/igordavydkin/" target="_blank">
-          <img src={linkedin} style={style.icons} alt="linkedin" />
-        </a>
+      <li className="list-item">
+        <BrandLink
+          src={linkedin}
+          alt="linkedin"
+          url="https://www.linkedin.com/in/igordavydkin/"
+        />
       </li>
     </ul>
   );
