@@ -12,10 +12,10 @@
     transform: translate(-50%, -50%);
 }
 
-.page-style {
+.pageStyle {
     background: url(../assets/bgs/bg-big-01.jpg) center;
 }
 
-.inner-style {
+.innerStyle {
     background: rgba(255, 255, 255, 0.7);
 }

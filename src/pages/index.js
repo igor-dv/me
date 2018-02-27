@@ -1,12 +1,11 @@
 import React from 'react';
 import Greeting from '../components/Greeting';
 import LinksList from '../components/LinksList';
-
-import './index.css';
+import styles from './index.module.css';
 
 const IndexPage = () => (
-  <div className="page page-style">
-    <section className="inner inner-style">
+  <div className={`${styles.page} ${styles.pageStyle}`}>
+    <section className={`${styles.inner} ${styles.innerStyle}`}>
       <Greeting />
       <LinksList />
     </section>

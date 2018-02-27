@@ -3,6 +3,7 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
+    `gatsby-plugin-react-css-modules`,
     'gatsby-plugin-no-sourcemaps',
     'gatsby-plugin-react-helmet',
     {
@@ -22,6 +23,6 @@ module.exports = {
           windows: false,
         }
       }
-    }
+    },
   ],
 };

@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import './BrandLink.css';
+import styles from './BrandLink.module.css';
 
 const BrandLink = props => {
   const { url, src, alt } = props;
 
   return (
     <a href={url} target="_blank">
-      <img src={src} className="icon" alt={alt} />
+      <img src={src} className={styles.icon} alt={alt} />
     </a>
   );
 };
