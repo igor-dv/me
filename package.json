@@ -1,14 +1,11 @@
 {
+  "private": true,
   "name": "me",
   "version": "1.0.0",
   "description": "About myself",
-  "main": "n/a",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop --host localhost --port 8000",
-    "format": "prettier --trailing-comma es5 --single-quote --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --trailing-comma es5 --single-quote --write \"**/src/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -18,16 +15,11 @@
     "url": "https://github.com/igor-dv/me/issues"
   },
   "homepage": "https://github.com/igor-dv/me#readme",
-  "dependencies": {
-    "gatsby": "^1.9.215",
-    "gatsby-link": "^1.6.37",
-    "gatsby-plugin-favicon": "^2.1.1",
-    "gatsby-plugin-no-sourcemaps": "^1.0.3",
-    "gatsby-plugin-react-css-modules": "^1.0.13",
-    "gatsby-plugin-react-helmet": "^2.0.5",
-    "react-helmet": "^5.2.0"
-  },
+  "dependencies": { },
   "devDependencies": {
     "prettier": "^1.10.2"
-  }
+  },
+  "workspaces": [
+    "apps/*"
+  ]
 }
