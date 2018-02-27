@@ -1,5 +1,6 @@
 .idea
 .cache
+.misc
 .DS_Store
 public/
 node_modules

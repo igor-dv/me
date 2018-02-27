@@ -1,0 +1,21 @@
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-style {
+    background: url(../assets/bgs/bg-big-01.jpg) center;
+}
+
+.inner-style {
+    background: rgba(255, 255, 255, 0.7);
+}
