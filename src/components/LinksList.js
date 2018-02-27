@@ -1,8 +1,8 @@
 import React from 'react';
-import twitter from '../icons/twitter-square.svg';
-import github from '../icons/github-square.svg';
-import medium from '../icons/medium.svg';
-import linkedin from '../icons/linkedin.svg';
+import twitter from '../assets/twitter-square.svg';
+import github from '../assets/github-square.svg';
+import medium from '../assets/medium.svg';
+import linkedin from '../assets/linkedin.svg';
 
 const style = {
   icons: {
