@@ -5,7 +5,7 @@
   "description": "About myself",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --trailing-comma es5 --single-quote --write \"{scripts,**/src}/**/*.js\"",
+    "format": "prettier --trailing-comma es5 --single-quote --write \"{scripts,**/src,**/.storybook}/**/*.js\"",
     "build": "node ./scripts/build.js"
   },
   "repository": {

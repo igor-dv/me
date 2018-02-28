@@ -35,7 +35,7 @@ class Greeting extends React.Component {
 
   render() {
     return (
-      <h1>
+      <h1 className={styles.title}>
         Hi, my name is Igor{' '}
         <span className={this.getEmojiClass()}>{this.state.emoji}</span>
       </h1>

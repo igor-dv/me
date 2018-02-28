@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --host localhost --port 8000"
+    "develop": "gatsby develop --host localhost --port 8000",
+    "storybook": "start-storybook -p 9000"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
     "gatsby-plugin-react-css-modules": "^1.0.13",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-options": "3.4.0-alpha.9",
+    "@storybook/addon-viewport": "^3.4.0-alpha.9",
+    "@storybook/addons": "^3.4.0-alpha.9",
+    "@storybook/react": "^3.4.0-alpha.9"
   }
 }
