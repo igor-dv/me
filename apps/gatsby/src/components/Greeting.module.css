@@ -11,3 +11,9 @@
 .emojiShown {
     opacity: 1;
 }
+
+@media (max-device-width: 500px) and (orientation: portrait) {
+    .title {
+        font-size: 27px;
+    }
+}

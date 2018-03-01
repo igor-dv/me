@@ -6,7 +6,7 @@ const BrandLink = props => {
   const { url, src, alt } = props;
 
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" className={styles.link}>
       <img src={src} className={styles.icon} alt={alt} />
     </a>
   );

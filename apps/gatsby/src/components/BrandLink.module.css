@@ -2,3 +2,13 @@
     width: 30px;
     display: block;
 }
+
+.link {
+    display: inline-block;
+}
+
+@media (max-device-width: 500px) and (orientation: portrait) {
+    .icon {
+        width: 40px;
+    }
+}
