@@ -19,4 +19,6 @@
 
 .innerStyle {
     background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.9) 80%);
+    box-shadow: 0 20px 10px -13px rgba(0,0,0,0.7);
 }
