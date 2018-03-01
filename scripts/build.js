@@ -30,6 +30,9 @@ function buildGatsby() {
   logCommand('Build gatsby specific');
   shelljs.exec('yarn build --prefix-paths');
 
+  logCommand('Build storybook for gatsby ');
+  shelljs.exec('yarn build-storybook');
+
   logCommand('Copy gatsby specific');
   shelljs.cp('-R', 'public', path.join(releaseDir, 'gatsby'));
 

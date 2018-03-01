@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build-storybook": "build-storybook -o ./public/storybook",
     "develop": "gatsby develop --host localhost --port 8000",
     "storybook": "start-storybook -p 9000"
   },
