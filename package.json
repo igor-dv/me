@@ -21,7 +21,8 @@
     "shelljs": "^0.8.1"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "tools/*"
   ],
   "dependencies": {
     "chalk": "^2.3.1"

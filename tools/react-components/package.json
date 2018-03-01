@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "@me/react-components",
+  "version": "1.0.0",
+  "description": "me react components with css modules",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-dv/me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igor-dv/me/issues"
+  },
+  "homepage": "https://github.com/igor-dv/me#readme",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-options": "3.4.0-alpha.9",
+    "@storybook/addon-viewport": "^3.4.0-alpha.9",
+    "@storybook/addons": "^3.4.0-alpha.9",
+    "@storybook/react": "^3.4.0-alpha.9",
+    "babel-core": "^6.26.0",
+    "babel-runtime": "^6.23.0"
+  }
+}

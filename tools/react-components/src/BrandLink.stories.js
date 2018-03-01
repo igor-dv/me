@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import BrandLink from './BrandLink';
 
-storiesOf('gatsby/components/BrandLink', module).add('simple', () => (
+storiesOf('components/BrandLink', module).add('simple', () => (
   <BrandLink
     url="https://ig0r.me"
     alt="brand"
