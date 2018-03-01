@@ -14,6 +14,7 @@
 
 .pageStyle {
     background: url(../assets/bgs/bg-big-01.jpg) center;
+    background-size: cover;
 }
 
 .innerStyle {
