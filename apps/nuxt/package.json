@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "@me/nuxt",
+  "version": "1.0.0",
+  "description": "me with nuxt",
+  "main": "n/a",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-dv/me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igor-dv/me/issues"
+  },
+  "homepage": "https://github.com/igor-dv/me#readme",
+  "dependencies": {
+    "nuxt": "^1.0.0"
+  }
+}

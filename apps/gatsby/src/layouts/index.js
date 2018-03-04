@@ -9,7 +9,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="ig0r.me"
       meta={[
-        { name: 'description', content: 'ig0r.me' },
+        { name: 'description', content: 'ig0r.me with gatsby' },
         { name: 'keywords', content: 'home, profile' },
       ]}
     />
@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
 };
 
 export default TemplateWrapper;

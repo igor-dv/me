@@ -1,22 +1,25 @@
+/* eslint-disable no-use-before-define */
 const path = require('path');
 const fs = require('fs');
 const shelljs = require('shelljs');
 const chalk = require('chalk');
 
 const releaseDir = path.join(process.cwd(), './.out');
+const logger = console;
+
+deleteReleaseDir();
+buildGatsby();
+buildNuxt();
 
 function logCommand(text) {
-  console.log(chalk`{green ${text}}`);
+  logger.log(chalk`{green ${text}}`);
 }
 
 function deleteReleaseDir() {
-  if (!fs.existsSync(releaseDir)) {
-    return;
+  if (fs.existsSync(releaseDir)) {
+    logCommand('Delete release dir');
+    shelljs.rm('-rf', releaseDir);
   }
-
-  logCommand('Delete release dir');
-
-  shelljs.rm('-rf', releaseDir);
 }
 
 function buildGatsby() {
@@ -39,5 +42,16 @@ function buildGatsby() {
   shelljs.cd('../../');
 }
 
-deleteReleaseDir();
-buildGatsby();
+function buildNuxt() {
+  logCommand('Build nuxt');
+  shelljs.cd('./apps/nuxt');
+  shelljs.exec('yarn generate');
+
+  // logCommand('Build storybook for nuxt ');
+  // shelljs.exec('yarn build-storybook');
+
+  logCommand('Copy nuxt specific');
+  shelljs.cp('-R', 'dist', path.join(releaseDir, 'nuxt'));
+
+  shelljs.cd('../../');
+}
