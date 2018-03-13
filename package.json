@@ -6,7 +6,6 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "format": "prettier --trailing-comma es5 --single-quote --write \"{scripts,**/src,**/.storybook}/**/*.js\"",
     "build": "node ./scripts/build.js"
   },
   "repository": {

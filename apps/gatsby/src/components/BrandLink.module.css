@@ -1,26 +1,38 @@
-@keyframes wiggle{
-    0% { transform: rotateZ(10deg) scale(1.1); }
-    25% { transform: rotateZ(10deg) scale(1.2); }
-    50% { transform: rotateZ(-10deg) scale(1.1); }
-    75% { transform: rotateZ(-10deg) scale(1.2); }
-    100% { transform: rotateZ(10deg) scale(1.1); }
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(10deg) scale(1.1);
+  }
+  25% {
+    transform: rotateZ(10deg) scale(1.2);
+  }
+  50% {
+    transform: rotateZ(-10deg) scale(1.1);
+  }
+  75% {
+    transform: rotateZ(-10deg) scale(1.2);
+  }
+  100% {
+    transform: rotateZ(10deg) scale(1.1);
+  }
 }
 
 .icon {
-    width: 30px;
-    display: block;
+  width: 30px;
+  display: block;
 }
 
 .icon:hover {
-    animation: wiggle .5s infinite;
+  animation: wiggle .5s infinite;
 }
 
-.link {
-    display: inline-block;
-}
+.link {}
 
 @media (max-device-width: 500px) and (orientation: portrait) {
-    .icon {
-        width: 40px;
-    }
+  .icon {
+    width: 40px;
+  }
+
+  .link {
+    display: inline-block;
+  }
 }
