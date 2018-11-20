@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import './index.css';
+import './layout.css';
 
 const TemplateWrapper = ({ children }) => (
   <main>
@@ -13,12 +13,12 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'home, profile' },
       ]}
     />
-    {children()}
+    {children}
   </main>
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default TemplateWrapper;

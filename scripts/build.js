@@ -9,7 +9,7 @@ const logger = console;
 
 deleteReleaseDir();
 buildGatsby();
-buildNuxt();
+// buildNuxt(); TODO: skubi dubi du
 
 function logCommand(text) {
   logger.log(chalk`{green ${text}}`);

@@ -27,6 +27,7 @@ module.exports = {
     'no-console': error,
     'linebreak-style': ignore,
     'import/no-extraneous-dependencies': ignore,
+    'import/no-unresolved': ignore,
     'prettier/prettier': [
       warn,
       {

@@ -1,11 +1,13 @@
-import { configure } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { configure, addDecorator } from '@storybook/react';
+import { withOptions } from '@storybook/addon-options';
 
-import '../src/layouts/index.css';
+import '../src/pages/layout.css';
 
-setOptions({
-  addonPanelInRight: true,
-});
+addDecorator(
+  withOptions({
+    addonPanelInRight: true,
+  })
+);
 
 function importAll(req) {
   req.keys().forEach(filename => req(filename));
